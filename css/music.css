@@ -1,0 +1,127 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px;
+  background: white; 
+  font-family: "微软雅黑";
+ }
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+.icon {
+  font-family: "iconfont"; }
+
+#audio {
+  margin: 0rem auto;
+}
+
+#play, #pause {
+	display: inline-block;
+  width: 80px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #666;
+}
+
+#progress, #volume {
+	
+  width: 300px;
+  height: 30px;
+  border: 1px solid #ccc;
+  position: relative;
+  display: inline-block;
+ 
+}
+
+#p-i, #v-i {
+	display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: red;
+  position: absolute;
+  cursor: pointer;
+  /*top:-10px;*/
+}
+
+#p-i {
+	
+  left: -15px;
+}
+
+#v-i {
+  right: -15px;
+}
+
+#mote {
+  width: 60px;
+  line-height: 30px;
+  border:1px solid #333;
+  cursor: pointer;
+  text-align: center;
+  color:#333;
+  display: inline-block;
+}
+#current-time,#duration{
+	width: 60px;
+  line-height: 30px;
+  text-align: center;
+	display: inline-block;
+}
+#list li {
+  padding-left: 15px;
+  margin: 15px;
+  list-style: none;
+  cursor: pointer;
+ 
+  /*background:red;*/
+}
+
+/*#list li{
+    color:#383838;
+}*/
+#list li span {
+  padding: 15px;
+}
+
+.author {
+  text-align: right;
+}
+
+li.active {
+  color: #c00;
+}
