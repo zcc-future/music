@@ -1,0 +1,95 @@
+$width:320px 360px 375px 412px 414px 750px;
+html{
+    font-size: 100px;
+}
+$color:#D40203;
+body{
+    font-size: 16px;
+    background:white;
+}
+*{
+    padding: 0;
+    margin:0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:"微软雅黑","宋体",sans-serif;
+    letter-spacing: 1px;
+}
+
+$shiji-width:750px;
+@each $i in $width{
+    @media screen and (min-width: #{$i}){
+        html{
+            font-size:100px * $i / $shiji-width;
+            
+        }
+    }
+}
+.icon{
+    font-family:"iconfont";
+}
+@mixin center{
+    position: relative;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+@mixin top-bottom{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    margin:auto;
+}
+
+/*head*/
+ .header{
+    width: 100%;
+    height: 1.4rem; 
+    padding:0.2rem 0.3rem;
+    position: relative;
+    color:white;
+    line-height: 0.6rem;
+    font-size: 18px;
+    background:$color;
+    .return{
+       width:1rem;
+       height:1rem;
+       background: url(../images/jtz.png)0px 6px;
+       background-repeat: no-repeat;
+       background-size: 60%;
+         @include top-bottom;
+        left:0.3rem;
+    }
+    .dian{
+        width:1rem;
+        height:1rem;
+        background: url(../images/dian.png)0px 0.3rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        float: right;
+       
+    }
+    #head{
+        display: block;
+        width:4rem;
+        height:1rem;
+        @include center;
+        li{
+            width:100%;
+            height:0.6rem;
+            line-height:0.6rem ;
+            text-align: center;
+            font-size: 20px;
+        }
+        .headauthor{
+            width:100%;
+            height:0.4rem;
+            line-height:0.4rem ;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    
+}

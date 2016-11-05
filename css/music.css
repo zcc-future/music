@@ -1,127 +1,120 @@
 @charset "UTF-8";
 html {
-  font-size: 100px; }
+  font-size: 100px;
+}
 
 body {
   font-size: 16px;
-  background: white; 
-  font-family: "微软雅黑";
- }
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+  background: white;
 }
 
-ul li {
+* {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  box-sizing: border-box;
+  font-family: "微软雅黑","宋体",sans-serif;
+  letter-spacing: 1px;
 }
 
 @media screen and (min-width: 320px) {
   html {
-    font-size: 42.66667px; } }
+    font-size: 42.66667px;
+  }
+}
 
 @media screen and (min-width: 360px) {
   html {
-    font-size: 48px; } }
+    font-size: 48px;
+  }
+}
 
 @media screen and (min-width: 375px) {
   html {
-    font-size: 50px; } }
+    font-size: 50px;
+  }
+}
 
 @media screen and (min-width: 412px) {
   html {
-    font-size: 54.93333px; } }
+    font-size: 54.93333px;
+  }
+}
 
 @media screen and (min-width: 414px) {
   html {
-    font-size: 55.2px; } }
+    font-size: 55.2px;
+  }
+}
 
 @media screen and (min-width: 750px) {
   html {
-    font-size: 100px; } }
+    font-size: 100px;
+  }
+}
 
 .icon {
-  font-family: "iconfont"; }
-
-#audio {
-  margin: 0rem auto;
+  font-family: "iconfont";
 }
 
-#play, #pause {
-	display: inline-block;
-  width: 80px;
-  line-height: 30px;
-  text-align: center;
-  cursor: pointer;
-  border: 1px solid #666;
-}
-
-#progress, #volume {
-	
-  width: 300px;
-  height: 30px;
-  border: 1px solid #ccc;
+/*head*/
+.header {
+  width: 100%;
+  height: 1.4rem;
+  padding: 0.2rem 0.3rem;
   position: relative;
-  display: inline-block;
- 
+  color: white;
+  line-height: 0.6rem;
+  font-size: 18px;
+  background: #D40203;
 }
 
-#p-i, #v-i {
-	display: inline-block;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background: red;
+.header .return {
+  width: 1rem;
+  height: 1rem;
+  background: url(../images/jtz.png) 0px 6px;
+  background-repeat: no-repeat;
+  background-size: 60%;
   position: absolute;
-  cursor: pointer;
-  /*top:-10px;*/
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.3rem;
 }
 
-#p-i {
-	
-  left: -15px;
+.header .dian {
+  width: 1rem;
+  height: 1rem;
+  background: url(../images/dian.png) 0px 0.3rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: right;
 }
 
-#v-i {
-  right: -15px;
+.header #head {
+  display: block;
+  width: 4rem;
+  height: 1rem;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-#mote {
-  width: 60px;
-  line-height: 30px;
-  border:1px solid #333;
-  cursor: pointer;
+.header #head li {
+  width: 100%;
+  height: 0.6rem;
+  line-height: 0.6rem;
   text-align: center;
-  color:#333;
-  display: inline-block;
+  font-size: 20px;
 }
-#current-time,#duration{
-	width: 60px;
-  line-height: 30px;
+
+.header #head .headauthor {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
   text-align: center;
-	display: inline-block;
-}
-#list li {
-  padding-left: 15px;
-  margin: 15px;
-  list-style: none;
-  cursor: pointer;
- 
-  /*background:red;*/
-}
-
-/*#list li{
-    color:#383838;
-}*/
-#list li span {
-  padding: 15px;
-}
-
-.author {
-  text-align: right;
-}
-
-li.active {
-  color: #c00;
+  font-size: 16px;
 }

@@ -45,11 +45,15 @@ $(function(){
 	function render(){
 		$("#list").empty();
 		audio.src = music[inner].src;
-		
+		head()
 		$.each(music,function(i , v){
 			var c=(i === inner) ? "active" : "";
 			$('<li class="'+c+'"><span>'+v.name+'</span><span class="author">'+v.author+'</span></li>').appendTo("#list");
 		});
+	}
+	function head(){
+		$("#head").html("")
+		$('<li class="headname">'+music[inner].name+'</li><li class="headauthor">'+music[inner].author+'</li>').appendTo("#head");
 	}
 
 	$("#list").on("click","li",function(){
@@ -58,6 +62,7 @@ $(function(){
 		inner = $(this).index();
 		audio.src = music[inner].src;
 		audio.play();
+		head()
 	});
 	render();
 	//播放和暂停
