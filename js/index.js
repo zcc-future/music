@@ -25,12 +25,14 @@ $(function(){
 	var current=$("#current-time");
 	var duration=$("#duration");
 	var progress=$("#progress");
+	var progress_1=$("#progress_1");
 	var pi=$("#p-i");
 	var vol=$("#volume");
 	var vi=$("#v-i");
 	var mote = $("#mote");
 	var but1=$(".pre")
 	var but2=$(".next")
+	var yinliang=$(".yinliang")
 	//将秒数转为时间
 	function format(v){
 		var v = Math.floor(v);
@@ -48,13 +50,14 @@ $(function(){
 		head()
 		$.each(music,function(i , v){
 			var c=(i === inner) ? "active" : "";
-			$('<li class="'+c+'"><span>'+v.name+'</span><span class="author">'+v.author+'</span></li>').appendTo("#list");
+			$('<li class="'+c+'"><span class="name">'+v.name+'</span>-<span class="author">'+v.author+'</span></li>').appendTo("#list");
 		});
 	}
 	function head(){
-		$("#head").html("")
+		$("#head").html("");
+		$("#author").html("");
 		$('<li class="headname">'+music[inner].name+'</li>').appendTo("#head");
-		$('<li class="headauthor">'+music[inner].author+'</li>').appendTo("#author");
+		$('<li class="headauthor">—'+music[inner].author+'—</li>').appendTo("#author");
 	}
 
 	$("#list").on("click","li",function(){
@@ -75,16 +78,18 @@ $(function(){
 		}
 	});
 	$(audio).on("play",function(){
-			play.html("暂停");
+			play.css({"background":"url(images/zt.png)","backgroundRepeat":"no-repeat","backgroundPosition":"center","backgroundSize":"80%"});
 	})
 	$(audio).on("pause",function(){
-			play.html("播放");
+			play.css({"background":"url(images/bofang.png)","backgroundRepeat":"no-repeat","backgroundPosition":"center","backgroundSize":"80%"});
 	})
 	//歌曲播放过程中调用的函数
+	
 	$(audio).on("timeupdate",function(){
 		current.html(format(audio.currentTime));
 		var left = progress.width() * audio.currentTime / audio.duration - pi.width() / 2;
 		pi.css("left",left);
+		progress_1.css("width",left);
 	});
 	//歌曲进度条点击
 	progress.on('click',function(e){
@@ -100,6 +105,7 @@ $(function(){
 		$(document).on('mousemove',function(e){
 			var left=e.clientX-progress.position().left+start;
 			var c = left/progress.width()*audio.duration;
+			progress_1.css("width",left);
 			if(c >= audio.duration || c <= 0){
 				return;
 			}
@@ -140,9 +146,13 @@ $(function(){
 		if($(this).attr("data-v")){
 			audio.volume=$(this).attr("data-v");
 			$(this).removeAttr("data-v");
+			$(this).css({"background":"url(images/yinliang1.png)","backgroundRepeat":"no-repeat","backgroundPosition":"center","backgroundSize":"60%"});
+			
 		}else{
 			$(this).attr("data-v",audio.volume);
 			audio.volume=0;
+			$(this).css({"background":"url(images/jingyin1.png)","backgroundRepeat":"no-repeat","backgroundPosition":"center","backgroundSize":"60%"});
+			
 		}
 	});
 	$(audio).on("volumechange",function(){
@@ -174,7 +184,29 @@ $(function(){
 		render()
 		audio.play();
 	})
+//默认状态
+yinliang.css("display","none")
+$(".liebiao").css("display","none")
+//音量显示及隐藏
+	$(".header").on("touchend",".dian",function(){
+		yinliang.css("display","block")
+		return false;
+	})
+	yinliang.on("touchend",".yl_2",function(){
+		yinliang.css("display","none");
+		return false;
+	})
+//列表显示及隐藏
+
+	$(".foot").on("touchend",".list_1",function(){
+		$(".liebiao").css("display","block");
+		return false;
+	})
+	$(".liebiao").on("touchend",".qx_1",function(){
+		$(".liebiao").css("display","none");
+		return false;
+	})
 	
-
-
+	
+	
 });
