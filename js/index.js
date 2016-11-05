@@ -270,13 +270,11 @@ $(".liebiao").css("display","none")
  	 	}
  	 	$(".shan").css("display","none").eq(now).css("display","block") 	 	
  	 }
-	 if(y-pos>=30){
-	 	if(now==1){
- 	 		$(".shan").css("display","none").eq(now).css("display","block")
- 	    }
-	 
-  	}
-	 return false;
+//	 if(y-pos>=30){
+//	 	if(now==1){
+// 	 		$(".shan").css("display","none").eq(now).css("display","block")
+// 	    } 
+//     }
   })
 	
 	
