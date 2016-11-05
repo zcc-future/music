@@ -442,3 +442,15 @@ body {
 }
 
 /*列表*/
+.shan1 {
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.shan1 img {
+  width: 100%;
+  height: auto;
+}

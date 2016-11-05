@@ -253,7 +253,31 @@ $(".liebiao").css("display","none")
 		$(".liebiao").css("display","none");
 		return false;
 	})
-	
+	//闪屏
+	$(".shan").on("touchstart",function(e){
+    	 pos=e.originalEvent.changedTouches[0].clientX
+    	
+    })
+    var now=0
+    $(".shan").css("display","none").eq(0).css("display","block")
+	$(".shan").on("touchend",function(e){
+  	 var y=e.originalEvent.changedTouches[0].clientX
+ 	 var index=$(this).index()
+  	 if(y-pos<=-30){
+ 	 	now++
+  	 	if(now>=$(".shan").length){
+  	 		return;
+ 	 	}
+ 	 	$(".shan").css("display","none").eq(now).css("display","block") 	 	
+ 	 }
+	 if(y-pos>=30){
+	 	if(now==1){
+ 	 		$(".shan").css("display","none").eq(now).css("display","block")
+ 	    }
+	 
+  	}
+	 return false;
+  })
 	
 	
 });
