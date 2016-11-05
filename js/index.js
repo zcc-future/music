@@ -36,7 +36,8 @@ $(function(){
 	var but1=$(".pre")
 	var but2=$(".next")
 	var yinliang=$(".yinliang")
-	var geciHeight=$("#geci ul").height()
+	
+		
 	//将秒数转为时间
 	function format(v){
 		var v = Math.floor(v);
@@ -64,7 +65,7 @@ $(function(){
 		$("#geci").html("");
 		$('<li class="headname">'+music[inner].name+'</li>').appendTo("#head");
 		$('<li class="headauthor">—'+music[inner].author+'—</li>').appendTo("#author");
-		$('<ul>'+music[inner].geci+'</ul>').appendTo("#geci");
+		$('<ul class="geci">'+music[inner].geci+'</ul>').appendTo("#geci");
 		
 	}
 
@@ -75,17 +76,21 @@ $(function(){
 		audio.src = music[inner].src;
 		audio.play();
 		head();
+		
 	});
 	render();
+	head();
 	//播放和暂停
 	play.on("click",function(){
 	
 		if(audio.paused){
 			audio.play();
+			head()
 		}else{
 			audio.pause();
 		}
 	});
+
 	$(audio).on("play",function(){
 			play.css({"background":"url(images/zt.png)","backgroundRepeat":"no-repeat","backgroundPosition":"center","backgroundSize":"80%"});
 	})
@@ -93,12 +98,16 @@ $(function(){
 			play.css({"background":"url(images/bofang.png)","backgroundRepeat":"no-repeat","backgroundPosition":"center","backgroundSize":"80%"});
 	})
 	//歌曲播放过程中调用的函数
-	
 	$(audio).on("timeupdate",function(){
 		current.html(format(audio.currentTime));
 		var left = progress.width() * audio.currentTime / audio.duration - pi.width() / 2;
 		pi.css("left",left);
 		progress_1.css("width",left);
+		var geciHeight=$("#geci .geci").height()
+		var height=geciHeight* audio.currentTime / audio.duration ;
+		$("#geci .geci").css("top","100"-height)
+		var index=Math.floor(($(".geci li").length)*audio.currentTime / audio.duration)
+		$(".geci li").css("color","white").eq(index).css("color","#D40203")
 	});
 	//歌曲进度条点击
 	progress.on('click',function(e){
@@ -180,6 +189,7 @@ $(function(){
 	        }
 		}
 		render()
+		head()
 		audio.play();
 	})	
 	but2.eq(0).click(function(){
@@ -192,6 +202,7 @@ $(function(){
 		   }
 		}
 		render()
+		head()
 		audio.play();
 	})
 //默认状态
