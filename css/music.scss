@@ -126,17 +126,30 @@ $shiji-width:750px;
 
 #geci{
     width:100%;
-    height:7rem;
-    padding:0.5rem 1.4rem;
+    height:6rem;
+    padding:0rem 1.4rem;
+    margin-top:0.5rem;
     overflow: hidden;
-    li{
-        width:100%;
-        height:0.5rem;
-        line-height:0.5rem;
-        text-align: center;
-        color:#eee;
-        font-size: 14px;
+    position: relative;
+    ul{
+         width:100%;
+         height:auto;
+         position: absolute;
+         left:0;
+         right:0;
+         top:0;
+         margin:auto;
+         li{
+            width:100%;
+            height:0.5rem;
+            line-height:0.5rem;
+            text-align: center;
+            color:#eee;
+            font-size: 14px;
+            
+        }
     }
+    
 }
 /*歌词*/
 

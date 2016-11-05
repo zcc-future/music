@@ -6,17 +6,19 @@ $(function(){
 			name:'安和桥',
 			author:'包师语',
 			src:"music/包师语 - 安和桥.mp3",
-			geci:"<li>《方圆几里》</li><li>词/曲/唱：薛之谦</li><li>感觉很诚恳 是好事</li><li>不需要发誓 那么幼稚</li><li>本以为可以 就这样随你</li><li>反正我也无处可去</li><li>我怕太负责任的人</li><li>因为他随时会牺牲</li><li>爱不爱都可以 我怎样都依你</li><li>连借口 我都帮你寻</li><li>与其在你不要的世界里</li><li>不如痛快把你忘记</li><li>这道理谁都懂 说容易 爱透了还要嘴硬</li><li>我宁愿 留在你方圆几里</li><li>我的心 要不回就送你</li><li>因为我爱你 和你没关系</li><li>感觉会压抑 的样子</li><li>勉强 也没什么意思</li><li>我不算很自私 也越来越懂事</li><li>爱你只是我的事</li><li>与其在你不要的世界里</li><li>不如痛快把你忘记</li><li>这道理谁都懂 说容易 爱透了还要嘴硬</li><li>我宁愿 留在你方圆几里</li><li>至少能感受你的悲喜</li><li>在你需要我的时候 就能陪你</li><li>我在你 不要的世界里</li><li>何苦不找个人来代替</li><li>可惜我 谁劝都不停</li><li>我宁愿 留在你方圆几里</li><li>我的心 要不回就送你</li><li>爱不爱都可以 我怎样都依你</li><li>因为我爱你 和你没关系</li><li>我的爱 扩散在方圆几里</li><li>近的能 听见你的呼吸</li><li>只要你转身 我就在这里</li>"
-		},
-		{
-			name:'方圆几里 (Live)',
-			author:'薛之谦 ',
-			src:'music/薛之谦 - 方圆几里 (Live).mp3'
+			
 		},
 		{
 			name:'男人歌',
 			author:'晋商魂',
 			src:'music/男人歌.mp3'
+			
+		},
+		{
+			name:'方圆几里 (Live)',
+			author:'薛之谦 ',
+			src:'music/薛之谦 - 方圆几里 (Live).mp3',
+			geci:"<li>《方圆几里》</li><li>词/曲/唱：薛之谦</li><li>感觉很诚恳 是好事</li><li>不需要发誓 那么幼稚</li><li>本以为可以 就这样随你</li><li>反正我也无处可去</li><li>我怕太负责任的人</li><li>因为他随时会牺牲</li><li>爱不爱都可以 我怎样都依你</li><li>连借口 我都帮你寻</li><li>与其在你不要的世界里</li><li>不如痛快把你忘记</li><li>这道理谁都懂 说容易 爱透了还要嘴硬</li><li>我宁愿 留在你方圆几里</li><li>我的心 要不回就送你</li><li>因为我爱你 和你没关系</li><li>感觉会压抑 的样子</li><li>勉强 也没什么意思</li><li>我不算很自私 也越来越懂事</li><li>爱你只是我的事</li><li>与其在你不要的世界里</li><li>不如痛快把你忘记</li><li>这道理谁都懂 说容易 爱透了还要嘴硬</li><li>我宁愿 留在你方圆几里</li><li>至少能感受你的悲喜</li><li>在你需要我的时候 就能陪你</li><li>我在你 不要的世界里</li><li>何苦不找个人来代替</li><li>可惜我 谁劝都不停</li><li>我宁愿 留在你方圆几里</li><li>我的心 要不回就送你</li><li>爱不爱都可以 我怎样都依你</li><li>因为我爱你 和你没关系</li><li>我的爱 扩散在方圆几里</li><li>近的能 听见你的呼吸</li><li>只要你转身 我就在这里</li>"
 		}
 	];
 	//声明变量
@@ -34,6 +36,7 @@ $(function(){
 	var but1=$(".pre")
 	var but2=$(".next")
 	var yinliang=$(".yinliang")
+	var geciHeight=$("#geci ul").height()
 	//将秒数转为时间
 	function format(v){
 		var v = Math.floor(v);
@@ -54,11 +57,15 @@ $(function(){
 			$('<li class="'+c+'"><span class="name">'+v.name+'</span>-<span class="author">'+v.author+'</span></li>').appendTo("#list");
 		});
 	}
+	//头部歌名和歌手 歌词
 	function head(){
 		$("#head").html("");
 		$("#author").html("");
+		$("#geci").html("");
 		$('<li class="headname">'+music[inner].name+'</li>').appendTo("#head");
 		$('<li class="headauthor">—'+music[inner].author+'—</li>').appendTo("#author");
+		$('<ul>'+music[inner].geci+'</ul>').appendTo("#geci");
+		
 	}
 
 	$("#list").on("click","li",function(){
@@ -67,11 +74,12 @@ $(function(){
 		inner = $(this).index();
 		audio.src = music[inner].src;
 		audio.play();
-		head()
+		head();
 	});
 	render();
 	//播放和暂停
 	play.on("click",function(){
+	
 		if(audio.paused){
 			audio.play();
 		}else{
