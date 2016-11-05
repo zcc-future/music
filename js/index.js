@@ -53,7 +53,8 @@ $(function(){
 	}
 	function head(){
 		$("#head").html("")
-		$('<li class="headname">'+music[inner].name+'</li><li class="headauthor">'+music[inner].author+'</li>').appendTo("#head");
+		$('<li class="headname">'+music[inner].name+'</li>').appendTo("#head");
+		$('<li class="headauthor">'+music[inner].author+'</li>').appendTo("#author");
 	}
 
 	$("#list").on("click","li",function(){
