@@ -161,7 +161,7 @@ $(function(){
 		$(document).off("mousemove");
 	});
 	//静音
-	mote.on("click",function(){
+	mote.on("touchend",function(){
 		if($(this).attr("data-v")){
 			audio.volume=$(this).attr("data-v");
 			$(this).removeAttr("data-v");
