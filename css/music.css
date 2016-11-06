@@ -417,6 +417,10 @@ body {
   font-size: 18px;
 }
 
+.liebiao #list li .delete {
+  float: right;
+}
+
 .liebiao #list li.active {
   color: #D40203;
 }

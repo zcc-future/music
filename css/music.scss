@@ -368,6 +368,9 @@ $shiji-width:750px;
                 color:white;
                 font-size: 18px;
             }
+            .delete{
+                   float: right;
+            }
             
         }
         li.active{
@@ -380,6 +383,7 @@ $shiji-width:750px;
                     color:$color;
                     font-size: 14px;
                 }
+                
             }
        
     }

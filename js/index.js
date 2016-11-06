@@ -12,17 +12,17 @@ $(function(){
 			name:'我可以',
 			author:'魏世伟',
 			src:'music/我可以.mp3',
-			geci:'<li>作词:林唯 蔡昮佑</li><li>作曲:蔡昮佑</li><li>演唱:魏世伟</li><li>寄没有地址的信</li><li>这样的情绪有种距离</li><li>你放着谁的歌曲</li><li>是怎样的心情</li><li>能不能说给我听</li><li>雨下得好安静</li><li>是不是你偷偷在哭泣</li><li>幸福真的不容易</li><li>在你的背景有我爱你</li><li>我可以陪你去看星星</li><li>不用再多说明</li><li>我就要和你在一起</li><li>我不想又再一次和你分离</li><li>我多么想每一次的美丽</li><li>是因为你</li><li></li><li></li><li></li><li></li><li></li><li></li><li>寄没有地址的信</li><li>这样的情绪有种距离</li><li>你放着谁的歌曲</li><li>是怎样的心情</li><li>能不能说给我听</li><li>雨下得好安静</li><li>是不是你偷偷在哭泣</li><li>幸福真的不容易</li><li>在你的背景有我爱你</li><li>我可以陪你去看星星</li><li>不用再多说明</li><li>我就要和你在一起</li><li>我不想又再一次和你分离</li><li>我多么想每一次的美丽</li><li>是因为你</li><li>我可以陪你去看星星</li><li>不用再多说明</li><li>我就要和你在一起</li><li>我不想又再一次和你分离</li><li>我多么想每一次的美丽</li><li>是因为你 </li>'
+			geci:'<li>作词:林唯 蔡昮佑</li><li>作曲:蔡昮佑</li><li>演唱:魏世伟</li><li>寄没有地址的信</li><li>这样的情绪有种距离</li><li>你放着谁的歌曲</li><li>是怎样的心情</li><li>能不能说给我听</li><li>雨下得好安静</li><li>是不是你偷偷在哭泣</li><li>幸福真的不容易</li><li>在你的背景有我爱你</li><li>我可以陪你去看星星</li><li>不用再多说明</li><li>我就要和你在一起</li><li>我不想又再一次和你分离</li><li>我多么想每一次的美丽</li><li>是因为你</li><li>寄没有地址的信</li><li>这样的情绪有种距离</li><li>你放着谁的歌曲</li><li>是怎样的心情</li><li>能不能说给我听</li><li>雨下得好安静</li><li>是不是你偷偷在哭泣</li><li>幸福真的不容易</li><li>在你的背景有我爱你</li><li>我可以陪你去看星星</li><li>不用再多说明</li><li>我就要和你在一起</li><li>我不想又再一次和你分离</li><li>我多么想每一次的美丽</li><li>是因为你</li><li></li><li></li><li></li><li></li><li></li><li></li><li>我可以陪你去看星星</li><li>不用再多说明</li><li>我就要和你在一起</li><li>我不想又再一次和你分离</li><li>我多么想每一次的美丽</li><li>是因为你 </li>'
 			
 		},
 		{
 			name:'方圆几里 (Live)',
 			author:'薛之谦 ',
 			src:'music/薛之谦 - 方圆几里 (Live).mp3',
-			geci:"<li>《方圆几里》</li><li>词/曲/唱：薛之谦</li><li>感觉很诚恳 是好事</li><li>不需要发誓 那么幼稚</li><li>本以为可以 就这样随你</li><li>反正我也无处可去</li><li>我怕太负责任的人</li><li>因为他随时会牺牲</li><li>爱不爱都可以 我怎样都依你</li><li>连借口 我都帮你寻</li><li>与其在你不要的世界里</li><li>不如痛快把你忘记</li><li>这道理谁都懂 说容易 爱透了还要嘴硬</li><li>我宁愿 留在你方圆几里</li><li>我的心 要不回就送你</li><li>因为我爱你 和你没关系</li><li>感觉会压抑 的样子</li><li>勉强 也没什么意思</li><li>我不算很自私 也越来越懂事</li><li>爱你只是我的事</li><li>与其在你不要的世界里</li><li>不如痛快把你忘记</li><li>这道理谁都懂 说容易 爱透了还要嘴硬</li><li>我宁愿 留在你方圆几里</li><li>至少能感受你的悲喜</li><li>在你需要我的时候 就能陪你</li><li>我在你 不要的世界里</li><li>何苦不找个人来代替</li><li>可惜我 谁劝都不停</li><li>我宁愿 留在你方圆几里</li><li>我的心 要不回就送你</li><li>爱不爱都可以 我怎样都依你</li><li>因为我爱你 和你没关系</li><li>我的爱 扩散在方圆几里</li><li>近的能 听见你的呼吸</li><li>只要你转身 我就在这里</li>"
+			geci:"<li>《方圆几里》</li><li></li><li>词/曲/唱：薛之谦</li><li>感觉很诚恳 是好事</li><li>不需要发誓 那么幼稚</li><li>本以为可以 就这样随你</li><li>反正我也无处可去</li><li>我怕太负责任的人</li><li>因为他随时会牺牲</li><li>爱不爱都可以 我怎样都依你</li><li>连借口 我都帮你寻</li><li>与其在你不要的世界里</li><li>不如痛快把你忘记</li><li>这道理谁都懂 说容易 爱透了还要嘴硬</li><li>我宁愿 留在你方圆几里</li><li>我的心 要不回就送你</li><li>因为我爱你 和你没关系</li><li>感觉会压抑 的样子</li><li>勉强 也没什么意思</li><li>我不算很自私 也越来越懂事</li><li>爱你只是我的事</li><li>与其在你不要的世界里</li><li>不如痛快把你忘记</li><li>这道理谁都懂 说容易 爱透了还要嘴硬</li><li>我宁愿 留在你方圆几里</li><li>至少能感受你的悲喜</li><li>在你需要我的时候 就能陪你</li><li>我在你 不要的世界里</li><li>何苦不找个人来代替</li><li>可惜我 谁劝都不停</li><li>我宁愿 留在你方圆几里</li><li>我的心 要不回就送你</li><li>爱不爱都可以 我怎样都依你</li><li>因为我爱你 和你没关系</li><li>我的爱 扩散在方圆几里</li><li>近的能 听见你的呼吸</li><li>只要你转身 我就在这里</li>"
 		},
 		{
-			name:'你还我怎样',
+			name:'你还要我怎样',
 			author:'魏世伟',
 			src:'music/你还要我怎样.mp3',
 			geci:'<li>你还要我怎样</li><li>词：薛之谦 曲：薛之谦</li><li>演唱：薛之谦</li><li>你停在了这条我们熟悉的街</li><li>把你准备好的台词全念一遍</li><li>我还在逞强 说着谎</li><li>也没能力遮挡 你去的方向</li><li>至少分开的时候我落落大方</li><li>我后来都会选择绕过那条街</li><li>又多希望在另一条街能遇见</li><li>思念在逞强 不肯忘</li><li>怪我没能力跟随 你去的方向</li><li>若越爱越被动 越要落落大方</li><li>你还要我怎样 要怎样</li><li>你突然来的短信就够我悲伤</li><li>我没能力遗忘 你不用提醒我</li><li>哪怕结局就这样</li><li>我还能怎样 能怎样</li><li>最后还不是落得情人的立场</li><li>你从来不会想 我何必这样</li><li>我慢慢的回到自己的生活圈</li><li>也开始可以接触新的人选</li><li>爱你到最后 不痛不痒</li><li>留言在计较 谁爱过一场</li><li>我剩下一张 没后悔的模样</li><li>你还要我怎样 要怎样</li><li>你千万不要在我婚礼的现场</li><li>我听完你爱的歌 就上了车</li><li>爱过你很值得</li><li>我不要你怎样 没怎样</li><li>我陪你走的路你不能忘</li><li>因为那是我 最快乐的时光</li><li>后来我的生活还算理想</li><li>没为你落到孤单的下场</li><li>有一天晚上 梦一场</li><li>你白发苍苍 说带我流浪</li><li>我还是没犹豫 就随你去天堂</li><li>不管能怎样 我能陪你到天亮 </li>'
@@ -78,12 +78,32 @@ $(function(){
 	function render(){
 		$("#list").empty();
 		audio.src = music[inner].src;
-		head()
+		head();
 		$.each(music,function(i , v){
 			var c=(i === inner) ? "active" : "";
-			$('<li class="'+c+'"><span class="name">'+v.name+'</span>-<span class="author">'+v.author+'</span></li>').appendTo("#list");
+			$('<li class="'+c+'"><span class="name">'+v.name+'</span>-<span class="author">'+v.author+'</span><span class="delete">删除<span></li>').appendTo("#list");
 		});
 	}
+	
+	//删除
+	$("#list").on("touchend",".delete",function(){
+		$(this).closest("li").remove()
+		var num=$(this).index()
+		music.splice(num,1);
+		render();
+		head();
+		if(num==inner){
+			audio.src=music[inner].src
+			audio.play()
+		}else if(num > inner){
+			
+		}else if(num < inner){
+			inner-=1
+		}
+		
+		return false;
+	})
+	
 	//头部歌名和歌手 歌词
 	function head(){
 		$("#head").html("");
@@ -102,7 +122,7 @@ $(function(){
 		audio.src = music[inner].src;
 		audio.play();
 		head();
-		
+		return false;
 	});
 	render();
 	head();
@@ -276,5 +296,10 @@ $(".liebiao").css("display","none")
 // 	    } 
 //     }
   })
+	
+	$(audio).on("ended",function(){
+		inner++
+	})
+	
 	
 });
