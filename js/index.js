@@ -153,7 +153,7 @@ $(function(){
 		var height=geciHeight* audio.currentTime / audio.duration ;
 		$("#geci .geci").css("top","100"-height)
 		var index=Math.floor(($(".geci li").length)*audio.currentTime / audio.duration)
-		$(".geci li").css("color","white").eq(index).css("color","#D40203")
+		$(".geci li").css("color","white").eq(index).css("color","#D40203");
 	});
 	//歌曲进度条点击
 	progress.on('click',function(e){
@@ -163,11 +163,11 @@ $(function(){
 	pi.on('click',false);
 	// duration.html=format(audio.duration);	
 	//歌曲进度拖拽
-	pi.on('mousedown',function(e){
+	pi.on('touchend',function(e){
 		var r=pi.width()/2;
 		var start=r-e.offsetX;
 //		var start=e.offsetX;
-		$(document).on('mousemove',function(e){
+		$(document).on('touchmove',function(e){
 			var left=e.clientX-progress.position().left+start;
 			var c = left/progress.width()*audio.duration;
 			progress_1.css("width",left);
@@ -178,8 +178,8 @@ $(function(){
 		});
 		return false;
 	});
-	$(document).on('mouseup',function(){
-		$(document).off("mousemove");
+	$(document).on('touchend',function(){
+		$(document).off("touchmove");
 	});
 	//音频进度条点击
 	vol.on("click",function(e){
