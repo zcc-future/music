@@ -87,20 +87,26 @@ $(function(){
 	
 	//删除
 	$("#list").on("touchend",".delete",function(){
-		$(this).closest("li").remove()
-		var num=$(this).index()
+		var aa=$(this).closest("li")
+		var num=aa.index()
 		music.splice(num,1);
-		render();
-		head();
+		
 		if(num==inner){
-			audio.src=music[inner].src
-			audio.play()
+			if(music[inner]){
+				audio.src=music[inner].src  
+			}else{
+				audio.src="";
+				inner=0;
+			}
+			
 		}else if(num > inner){
 			
 		}else if(num < inner){
 			inner-=1
 		}
-		
+		render();
+		head();
+		 audio.play()
 		return false;
 	})
 	
